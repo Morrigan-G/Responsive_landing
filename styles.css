@@ -231,9 +231,9 @@ button:active {
     font-size: var(--font-14);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 641px) {
   .container {
-    max-width: 600px;
+    max-width: 641px;
     margin: 0 auto;
     padding: 0 20px;
     border: 2px solid purple;
