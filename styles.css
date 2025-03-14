@@ -231,9 +231,9 @@ button:active {
     font-size: var(--font-14);
   }
 }
-@media (max-width: 641px) {
+@media (max-width: 380px) {
   .container {
-    max-width: 641px;
+    max-width: 380px;
     margin: 0 auto;
     padding: 0 20px;
     border: 2px solid purple;
@@ -276,23 +276,26 @@ button:active {
   .pasti_text {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 22px;
     justify-content: flex-start;
     margin: 0;
   }
+  p br {
+    display: none;
+  }
   .pasti_text > h1 {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 38px;
   }
   .pasti_text > p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     font-weight: 400;
   }
 
   .pasti_list {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: space-between;
     padding-left: 15px;
   }
@@ -303,18 +306,16 @@ button:active {
   .pasti_button_text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    max-width: 100%;
   }
   .pasti_button_text > p {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 22px;
     margin: 0;
   }
   .pasti_button_text > h2 {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 26px;
     margin: 0;
   }
