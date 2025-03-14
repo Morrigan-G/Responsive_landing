@@ -205,17 +205,17 @@ button:active {
   .pasti_text {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 15px;
   }
   .pasti_text > h1 {
     margin-bottom: 0;
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 30px;
+    line-height: 50px;
     font-weight: 900;
   }
   .pasti_text > p {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 26px;
     font-weight: 500;
   }
@@ -227,6 +227,7 @@ button:active {
     padding: 0 0 0 30px;
     gap: 30px;
     font-weight: var(--weight-bold);
+    font-size: 12px;
   }
 
   .pasti_button {
@@ -238,12 +239,12 @@ button:active {
     flex-direction: column;
   }
   .pasti_button_text > p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
     margin: 0;
   }
   .pasti_button_text > h2 {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 26px;
     margin: 0;
   }
