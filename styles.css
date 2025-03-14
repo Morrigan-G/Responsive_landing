@@ -234,7 +234,6 @@ button:active {
 @media (max-width: 360px) {
   .container {
     max-width: 360px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     border: 2px solid purple;
@@ -272,7 +271,6 @@ button:active {
   .pasti_block {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
   }
   .pasti_text {
     display: flex;
@@ -297,7 +295,7 @@ button:active {
   .pasti_list {
     display: flex;
     font-size: 10px;
-    /* justify-content: space-between; */
+
     padding-left: 15px;
   }
   .pasti_button {
@@ -307,16 +305,14 @@ button:active {
   .pasti_button_text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .pasti_button_text > p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 22px;
     margin: 0;
   }
   .pasti_button_text > h2 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 26px;
     margin: 0;
   }
