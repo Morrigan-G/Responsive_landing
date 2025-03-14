@@ -157,17 +157,17 @@ button:active {
 .pink {
   color: var(--color-pink);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1060px) {
   .container_header {
     margin: 0 auto;
 
-    max-width: 1024px;
+    max-width: 1060px;
     border: 2px solid purple;
   }
   .container {
     margin: 0 auto;
     padding: 0 80px;
-    max-width: 1024px;
+    max-width: 1060px;
     border: 2px solid purple;
   }
   .header {
