@@ -1,3 +1,7 @@
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
 body {
   border: 1px solid purple;
   font-family: "Roboto";
@@ -55,7 +59,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: var(--font-14);
-  padding: 0 100px;
 }
 
 .header_navigation {
@@ -69,7 +72,7 @@ body {
 }
 .btn {
   background-color: #ee9591;
-  border-radius: 6px;
+  color: var(--color-white);
   border: none;
 }
 button:hover,
@@ -81,13 +84,13 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-white);
   width: 5.625rem;
   height: 2.25rem;
+  border-radius: 6px;
 }
 .img_logo {
-  width: 190px;
-  height: 40px;
+  width: 100%;
+  max-width: 190px;
 }
 .btn_header_position {
   display: flex;
@@ -99,8 +102,8 @@ button:active {
 .pasti_block {
   display: flex;
   justify-content: center;
-  padding-bottom: 143px;
   align-items: center;
+  padding-bottom: 143px;
 
   gap: 35px;
 }
@@ -126,9 +129,10 @@ button:active {
 }
 .pasti_list {
   display: flex;
-  padding: 0 0 0 30px;
+  padding: 0;
   gap: 30px;
   font-weight: var(--weight-bold);
+  list-style-position: inside;
 }
 .pasti_button_text > p {
   font-size: var(--font-14);
@@ -147,31 +151,80 @@ button:active {
   gap: 6px;
 }
 .pasti_button {
-  max-width: 80%;
   padding: 15px 22px;
+  border-radius: 10px;
 }
 .Brush img {
-  width: 639px;
-  height: 537px;
+  max-width: 640px;
+  width: 100%;
 }
 .pink {
   color: var(--color-pink);
 }
+.beautypreneur_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 200px;
+}
+.tablet_position {
+  display: flex;
+
+  gap: 40px;
+}
+.beautypreneur_text {
+  color: var(--color-light_grey);
+  font-size: var(--font-16);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.beautypreneur_text > h1 {
+  color: var(--color-dark_grey);
+  font-size: var(--font-40);
+  margin: 0;
+}
+.beautypreneur_text img {
+  width: 100%;
+  max-width: 100px;
+}
+.tablet_text {
+  padding: 34px 40px 24px 40px;
+  border: 8px solid rgb(247, 247, 247);
+  box-sizing: border-box;
+  border-radius: 1.25rem;
+  box-shadow: -40px 40px 50px 0px rgba(85, 85, 85, 0.14);
+  background: linear-gradient(
+    131.19deg,
+    rgb(249, 168, 165) 34.546%,
+    rgb(226, 138, 134) 79.957%
+  );
+}
+.tablet_text h1 {
+  font-size: var(--font-90);
+  margin: 0;
+}
+.tablet_text > p {
+  font-size: var(--font-14);
+}
+.tablet_text p:last-child {
+  font-size: var(--font-10);
+  color: #ffffff;
+  opacity: 0.4;
+}
 @media (max-width: 800px) {
-  .container_header {
-    margin: 0 auto;
-    max-width: 800px;
-    border: 2px solid purple;
-  }
   .container {
     margin: 0 auto;
     padding: 0 40px;
     max-width: 800px;
     border: 2px solid purple;
   }
-  .header {
-    padding: 0 40px;
+  .container_header {
+    border: 2px solid purple;
+    padding: 0 20px;
   }
+
   .header_navigation {
     display: none;
   }
@@ -205,17 +258,17 @@ button:active {
   .pasti_text {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
   }
   .pasti_text > h1 {
     margin-bottom: 0;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 70px;
+    line-height: 80px;
     font-weight: 900;
   }
   .pasti_text > p {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 500;
   }
@@ -224,10 +277,10 @@ button:active {
   }
   .pasti_list {
     display: flex;
-    padding: 0 0 0 30px;
+    padding: 0;
     gap: 30px;
     font-weight: var(--weight-bold);
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .pasti_button {
@@ -239,19 +292,44 @@ button:active {
     flex-direction: column;
   }
   .pasti_button_text > p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     margin: 0;
   }
   .pasti_button_text > h2 {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 26px;
     margin: 0;
   }
+  .beautypreneur_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .beautypreneur_text br {
+    display: none;
+  }
+  .beautypreneur_text img {
+    display: none;
+  }
+  /* .tablet_position {
+    margin: 0 108px 0 80px;
+  } */
+
+  .tablet_text h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  .tablet_text > p {
+    font-size: var(--font-14);
+    word-break: normal;
+  }
+  .tablet_text br {
+    display: none;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .container {
-    max-width: 360px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 0 20px;
     border: 2px solid purple;
@@ -272,29 +350,26 @@ button:active {
     align-items: center;
     gap: 28px;
   }
-  .btn {
-    background-color: #ee9591;
-    border-radius: 10px;
-  }
+
   .Registrasi {
     font-size: var(--font-12);
     width: 4.25rem;
     height: 1.625rem;
   }
   .img_logo {
-    width: 114px;
-    height: 24px;
+    max-width: 114px;
   }
 
   .pasti_block {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
   }
   .pasti_text {
     display: flex;
     flex-direction: column;
-    gap: 22px;
     justify-content: flex-start;
+
     margin: 0;
   }
   p br {
@@ -303,18 +378,19 @@ button:active {
   .pasti_text > h1 {
     font-size: 28px;
     line-height: 38px;
+    margin-bottom: 22px;
   }
   .pasti_text > p {
     font-size: 12px;
     line-height: 22px;
     font-weight: 400;
+    margin-bottom: 22px;
   }
 
   .pasti_list {
     display: flex;
     font-size: 10px;
-
-    padding-left: 15px;
+    margin-bottom: 26px;
   }
   .pasti_button {
     padding: 14px 21px;
@@ -332,6 +408,52 @@ button:active {
   .pasti_button_text > h2 {
     font-size: 12px;
     line-height: 26px;
+  }
+  .Registrasi {
+    border-radius: 4px;
+  }
+  .beautypreneur_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .beautypreneur_text br {
+    display: none;
+  }
+  .beautypreneur_text h1 {
+    font-size: 22px;
+  }
+  .beautypreneur_text p {
+    font-size: 14px;
+  }
+  .beautypreneur_text img {
+    display: none;
+  }
+  .tablet_position {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tablet_text h1 {
+    font-size: 60px;
     margin: 0;
+  }
+  .tablet_text > p {
+    font-size: var(--font-14);
+    word-break: normal;
+  }
+  .tablet_text br {
+    display: none;
+  }
+  .tablet_text {
+    box-sizing: border-box;
+    border: 8px solid rgb(244, 244, 244);
+    border-radius: 20px;
+    box-shadow: -40px 40px 50px 0px rgba(85, 85, 85, 0.14);
+    background: linear-gradient(
+      -49.4deg,
+      rgb(249, 168, 165) -9.154%,
+      rgb(226, 138, 134) 64.253%
+    );
   }
 }
