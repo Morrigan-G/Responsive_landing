@@ -157,17 +157,16 @@ button:active {
 .pink {
   color: var(--color-pink);
 }
-@media (max-width: 1060px) {
+@media (max-width: 800px) {
   .container_header {
     margin: 0 auto;
-
-    max-width: 1060px;
+    max-width: 800px;
     border: 2px solid purple;
   }
   .container {
     margin: 0 auto;
-    padding: 0 80px;
-    max-width: 1060px;
+    padding: 0 40px;
+    max-width: 800px;
     border: 2px solid purple;
   }
   .header {
@@ -180,6 +179,7 @@ button:active {
     width: 32px;
     height: 32px;
   }
+
   .burger {
     display: flex;
     width: 2rem;
@@ -209,6 +209,15 @@ button:active {
   }
   .pasti_text > h1 {
     margin-bottom: 0;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 900;
+  }
+  .pasti_text > p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
   }
   .Brush {
     display: none;
@@ -221,14 +230,22 @@ button:active {
   }
 
   .pasti_button {
+    padding: 14px 21px;
+    max-width: 100%;
+  }
+  .pasti_button_text {
+    display: flex;
+    flex-direction: column;
+  }
+  .pasti_button_text > p {
+    font-size: 14px;
+    line-height: 22px;
     margin: 0;
-    padding: 15px 22px;
   }
-  .pasti_button > h3 {
-    font-size: var(--font-20);
-  }
-  .pasti_button > p {
-    font-size: var(--font-14);
+  .pasti_button_text > h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
   }
 }
 @media (max-width: 360px) {
