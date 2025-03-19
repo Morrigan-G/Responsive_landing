@@ -355,6 +355,49 @@ a {
   padding: 10px;
   margin-top: 30px;
 }
+.Meet_our_mentor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--color-dark_grey);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.Meet_our_mentor h3 {
+  margin: 0;
+}
+.Meet_our_mentor :first-child {
+  font-size: var(--font-40);
+}
+
+.Meet_our_mentor p {
+  color: var(--color-light_grey);
+  font-size: var(--font-16);
+}
+.portraits {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.portraits img {
+  max-width: 274px;
+  width: 100%;
+  border-radius: 16px;
+  opacity: 80%;
+}
+.portraits span:first-child {
+  font-size: var(--font-18);
+  color: #555555;
+}
+.portraits span:nth-of-type(2) {
+  color: var(--color-pink);
+  font-size: var(--font-14);
+}
+.portraits span:last-child {
+  color: var(--color-light_grey);
+  font-size: var(--font-14);
+}
 @media (max-width: 1200px) {
   .container {
     margin: 0 auto;
@@ -514,6 +557,14 @@ a {
   .tablet_btns {
     max-width: 300px;
     width: 100%;
+  }
+  .Meet_our_mentor {
+    text-align: center;
+  }
+  .portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
   }
 }
 @media (max-width: 450px) {
@@ -734,5 +785,40 @@ a {
   .grid_butns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .Meet_our_mentor {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+  .portraits img {
+    max-width: 150px;
+    width: 100%;
+  }
+  .portraits span:first-child {
+    font-size: var(--font-14);
+  }
+  .portraits span:nth-of-type(2) {
+    font-size: var(--font-10);
+  }
+  .portraits span:last-child {
+    font-size: var(--font-10);
+  }
+  .portraits span {
+    display: flex;
+    flex-direction: column;
+  }
+  .portraits {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 100px;
+  }
+  .Meet_our_mentor :first-child {
+    font-size: 26px;
+  }
+  .Meet_our_mentor p {
+    font-size: var(--font-14);
   }
 }
